@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音声プレーヤー - otousankakkoii.mp3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-container">
+            <h1 class="player-title">音声プレーヤー</h1>
+            <p class="player-subtitle">ボタンをクリックして音声を再生してください</p>
+            
+            <div class="audio-controls">
+                <button id="playButton" class="btn btn--primary btn--lg">
+                    音声を再生
+                </button>
+                <button id="stopButton" class="btn btn--secondary btn--lg" disabled>
+                    停止
+                </button>
+            </div>
+            
+            <div id="errorMessage" class="error-message hidden">
+                音声ファイルの読み込みに失敗しました
+            </div>
+            
+            <div id="statusMessage" class="status-message hidden">
+                <div class="status status--info">
+                    <span id="statusText">準備完了</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
